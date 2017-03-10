@@ -1,0 +1,79 @@
+/******************** RTL  ******************************/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+ul, ol { margin: 0 10px 10px 0; }
+.screen-reader-text:hover, .screen-reader-text:focus {
+	right: 5px;
+	left: auto;
+}
+caption, th, td { text-align: right; }
+blockquote {
+	border-right-width: 4px;
+	border-left-width: 0px;
+	margin: 0 0 1.4736842105em;
+	padding: 0 1.263157895em 0 0;
+}
+.alignright, #main .hentry .entry-summary .more-link, #main .hentry .entry-summary .more-link .fa, .author-info .author-description, #main .page-header .page-title a.subscribe i, .post-navigation .nav-next { float: left; }
+.alignleft, #main .hentry .entry-meta ul li, .author-info .author-metas a, .author-info .author-metas a.posts i, .author-info .author-avatar, .post-navigation .nav-previous { float: right; }
+#main .hentry .entry-meta ul li { margin: 3px 0 3px 15px }
+#main .hentry .entry-meta ul li .fa, .author-info .author-metas a.posts i {
+	margin-left: 2px;
+	margin-right: 0px;
+}
+#main .hentry .entry-summary .more-link .fa { margin-top: 3px; }
+#main .hentry .entry-summary .more-link .fa:before {
+	content: "\f060";
+	margin-right: 10px;
+}
+#main .page-header .page-title a.subscribe i {
+	margin-right: 10px;
+	margin-top: 2px;
+}
+#main .page-header .page-title a.subscribe {
+	left: 0px;
+	right: auto;
+	;
+}
+#comments .comment-meta, #comments .comment-content {
+	margin-right: 60px;
+	margin-left: 0px;
+}
+#comments .comment-author .avatar {
+	left: auto;
+	;
+	right: -60px;
+}
+#comments .comment-body div.reply, #comments .comment-reply-title small {
+	right: auto;
+	;
+	left: 0px;
+}
+#comments .comment-list .comment #respond, #comments .comment-list .children {
+	margin-left: 0px;
+	margin-right: 50px;
+}
+.post-navigation .nav-previous {
+	padding-right: 30px;
+	padding-left: 15px;
+}
+.post-navigation .nav-next {
+	padding-left: 30px;
+	padding-right: 15px;
+	text-align: left;
+	;
+}
+.post-navigation .nav-next:after {
+	right: auto;
+	left: -10px;
+	content: '\f053';
+}
+.post-navigation .nav-previous:before {
+	left: auto;
+	;
+	right: -10px;
+	content: '\f054';
+}
+.entry-content *.alignleft { margin: 0.4em 0 1.6em 1.6em; }
+.entry-content *.alignright { margin: 0.4em 1.6em 1.6em 0; }

@@ -1,0 +1,100 @@
+/******************** Responsive  ******************************/
+
+@-ms-viewport {
+ width: device-width;
+}
+@viewport {
+ width: device-width;
+}
+ @media print {
+}
+ @media screen and (max-width: 1225px) {
+ .wrapper {
+ margin-left: 10px !important;
+ margin-right: 10px !important;
+}
+}
+ @media screen and (max-width: 901px) {
+ #masthead .wp-custom-header {
+ display:none;
+}
+ #masthead .site-header-menu .menu-toggle {
+ display: block;
+}
+ #masthead .site-header-menu .main-navigation {
+ position: absolute;
+ top: auto;
+ left: 10px;
+ width: 200px;
+ background: #fff;
+ z-index: 9999;
+ padding: 10px;
+ display: none;
+ box-shadow: 0 11px 17px 3px rgba(0, 0, 0, 0.1)
+}
+ #masthead .site-header-menu ul.primary-menu {
+ position: relative;
+ width: 100%;
+ border-top: 1px solid #eee;
+}
+ #masthead .site-header-menu li {
+ float: none!important;
+ width: 100%;
+ padding: 5px 5px 7px!important;
+ margin: 0 !important;
+ line-height: 16px;
+ border-bottom: 1px solid #eee;
+}
+ #masthead .site-header-menu li a {
+ color:#666 !important;
+ display:block;
+}
+ #masthead .site-header-menu li:hover {
+ background:#eee;
+}
+ #masthead .site-header-menu li.menu-item-has-children {
+}
+ #masthead .site-header-menu li.menu-item-has-children a:after {
+ display: none;
+}
+ #masthead .site-header-menu ul.primary-menu li ul.sub-menu {
+ position: relative;
+ display: block;
+ left: 0px;
+}
+ #masthead .site-header-menu ul.primary-menu li ul.sub-menu li {
+ background: none;
+ margin-bottom: 0px;
+}
+ #main, #secondary.sidebar {
+ width: 100%;
+ float: none !important;
+ clear: both;
+}
+}
+@media screen and (max-width: 426px) {
+ #main .hentry .entry-summary .more-link {
+ float: none;
+ text-align: center;
+}
+ #main .hentry .entry-title {
+ font-size: 25px;
+ line-height: 30px;
+}
+ #main .hentry .entry-wrap.img .entry-title {
+ margin: -50px 10px 0;
+ padding: 10px 15px;
+}
+ .post-navigation {
+ display: none;
+}
+ .author-info .author-avatar {
+ float: none !important;
+ margin: 0 auto;
+}
+ .author-info .author-description {
+ float: none!important;
+ width: 100%!important;
+ text-align: center!important;
+}
+}
