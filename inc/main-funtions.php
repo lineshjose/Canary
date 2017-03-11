@@ -189,12 +189,18 @@ function canary_active_sidebars(){
 
 
 // Post featured image --------------->
-	function canary_post_thumbnail($size=''){
-		$size=trim($size);
-		if(has_post_thumbnail()){ 
-			echo '<div class="entry-thumbnail"><a class="" href="'.esc_url(get_the_permalink()).'" aria-hidden="true">';
-			the_post_thumbnail( $size, array( 'alt' => get_the_title() ) );
-			echo '</a></div>';
+	function canary_post_thumbnail( $size='',$id='')
+	{
+		if( !($size=trim($size)) ){
+			$size='medium';
+		}
+		if( !($id=trim($id)) ){
+			$id=get_the_ID();
+		}
+		if(has_post_thumbnail($id)){ 
+			echo '<div class="entry-thumbnail">
+					<a class="" href="'.esc_url(get_the_permalink()).'">'.get_the_post_thumbnail( $id, $size, array( 'alt' => get_the_title() ) ).'</a>
+				</div>';
 		}
 	}
 
@@ -268,6 +274,8 @@ function canary_active_sidebars(){
 		echo '<div class="clear"></div>
 		</div>';
 	}
+
+
 	
 // Archive title ----------------------->
 	add_filter('get_the_archive_title','canary_filter_archive_title');	

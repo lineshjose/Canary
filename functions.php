@@ -1,5 +1,5 @@
 <?php
-if ( ! isset( $content_width ) ) $content_width = 1200;
+if ( ! isset( $content_width ) ) $content_width = 800;
 
 // canary- setup --------------->
 add_action( 'after_setup_theme', 'canary_setup' );
@@ -14,7 +14,9 @@ function canary_setup()
 		set_post_thumbnail_size( 150, 150,true ); 
 		add_image_size('canary-post-medium', 400, 250, true );
 		add_image_size('canary-post-big', 850,300, true );
+		add_image_size('canary-post-single', 800,0, false );
 		add_image_size('canary-post-wide', 1200,500, true );
+
 	add_theme_support( 'custom-logo', array(
 		'height'      => 36,
 		'width'       => 200,

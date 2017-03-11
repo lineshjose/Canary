@@ -30,15 +30,12 @@
              )
          );
     }?>
-    <p class="site-info centertext footer-copy"> <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">&copy; <?php echo esc_html(date('Y'));?>
-      <?php bloginfo('name'); ?>
-      . </a><a href="<?php echo esc_url('https://wordpress.org/'); ?>">
-      <?php esc_html_e('Proudly powered by WordPress', 'canary'); ?>
-      . </a><a href="<?php echo esc_url('https://linesh.com/projects/canary/'); ?>">
-      <?php esc_html_e('Canary', 'canary'); ?>
-      </a>, <a href="<?php echo esc_url('https://linesh.com/'); ?>">
-      <?php esc_html_e('Theme by Linesh Jose', 'canary'); ?>
-      </a> </p>
+    <p class="site-info centertext footer-copy"> 
+    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><span>&ncopy;&nbsp;</span><?php echo esc_html(date('Y'));?><span>&nbsp;</span><?php bloginfo('name'); ?><span>.</span></a>
+      <a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php esc_html_e('Proudly powered by WordPress.', 'canary'); ?></a>
+      <a href="<?php echo esc_url('https://linesh.com/projects/canary/'); ?>"><?php esc_html_e('Canary', 'canary'); ?></a><span>, &nbsp;</span> 
+      <a href="<?php echo esc_url('https://linesh.com/'); ?>"><?php esc_html_e('Theme by Linesh Jose', 'canary'); ?><span>.</span></a>
+      </p>
   </div>
 </footer>
 </div>

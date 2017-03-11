@@ -5,10 +5,10 @@
 	Author: Linesh Jose
 	Author URI: https://linesh.com/
 	Text Domain: canary
-	Version: 1.1
+	Version: 1.2
 	Description: Canary is clean, blog-focused, and designed for clarity, with simple, straightforward typography that's readable on a wide variety of screen sizes, and suitable for multiple languages.This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
-	License: GNU General Public License v2 or later
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	License: GNU General Public License v3 or later
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	Tags:  two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, microformats, post-formats, sticky-post, threaded-comments
 */
 /* Default */
@@ -794,6 +794,7 @@ max-height: none;
 	margin:-50px 20px 0;
 	display:block;
 	background: #fff;
+	    text-align: center;
 	padding:10px 20px;
 }
 #main .hentry .entry-title, #main .hentry .entry-title a { color: #373737 !important; }

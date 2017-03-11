@@ -3,9 +3,9 @@ Contributors: lineshjose
 Theme URI: http://linesh.com/projects/canary/
 Requires at least: WordPress 4
 Tested up to: WordPress 4.7
-Stable tag: 1.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.2
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, microformats, post-formats, sticky-post, threaded-comments, rtl
 
 == Description ==
@@ -48,6 +48,12 @@ Source: http://fontawesome.io
 
 
 == Changelog ==
+
+= 1.2 =
+* Bug fixes
+
+= 1.1 =
+* Bug fixes
 
 = 1.0 =
 *Initial release.

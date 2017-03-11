@@ -10,13 +10,14 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-content'); ?>>
-  <?php 
-    if(is_single() || is_page()){
-      canary_post_thumbnail('canary-post-big');
+<?php 
+if(is_single() || is_page() ){
+  if( is_page_template('page-full-width.php')) { canary_post_thumbnail('canary-post-wide'); }
 
-    }elseif( in_array( get_post_format(), array('aside','standard',''))){
-      canary_post_thumbnail('canary-post-big');
-    } ?>
+  else { canary_post_thumbnail('canary-post-single'); }
+
+}else{canary_post_thumbnail('canary-post-big');}
+?>
   
   <div class="entry-wrap <?php if(has_post_thumbnail()) echo 'img';?>">
     <header class="entry-header">
